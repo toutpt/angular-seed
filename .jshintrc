@@ -3,6 +3,7 @@
   "globals": {
     "angular": false,
     "describe": false,
+    "ngDescribe": false,
     "it": false,
     "expect": false,
     "beforeEach": false,

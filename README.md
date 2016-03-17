@@ -1,3 +1,16 @@
+# This a fork
+
+Difference with the official seed:
+
+* Use angular.component
+* Wrap your javascript files in IIFE
+
+TODO: 
+* use es6 with babel
+* use webpack
+* use angular materials
+* better build with webpack or gulp serve (I will try both)
+
 # angular-seed — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.

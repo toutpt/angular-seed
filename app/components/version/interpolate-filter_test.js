@@ -1,15 +1,16 @@
 'use strict';
 
-describe('myApp.version module', function() {
-  beforeEach(module('myApp.version'));
+ngDescribe('myApp.version module', {
+    modules: ['myApp.version'],
+    name: 'interpolate filter',
+    inject: ['interpolateFilter'],
+    tests: function(deps) {
+        beforeEach(module(function($provide) {
+            $provide.value('version', 'TEST_VER');
+        }));
 
-  describe('interpolate filter', function() {
-    beforeEach(module(function($provide) {
-      $provide.value('version', 'TEST_VER');
-    }));
-
-    it('should replace VERSION', inject(function(interpolateFilter) {
-      expect(interpolateFilter('before %VERSION% after')).toEqual('before TEST_VER after');
-    }));
-  });
+        it('should replace VERSION', inject(function() {
+            expect(deps.interpolateFilter('before %VERSION% after')).toEqual('before TEST_VER after');
+        }));
+    }
 });

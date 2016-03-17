@@ -1,16 +1,15 @@
 'use strict';
 
-describe('myApp.view2 module', function() {
+ngDescribe('myApp.module module', {
+    modules: ['myApp.module'],
+    name: 'view2 controller',
+    controllers: ['ViewCtrl'],
+    tests: function (deps) {
 
-  beforeEach(module('myApp.view2'));
+        it('should ....', function() {
+            //spec body
+            expect(deps.ViewCtrl).toBeDefined();
+        });
+    }
 
-  describe('view2 controller', function(){
-
-    it('should ....', inject(function($controller) {
-      //spec body
-      var view2Ctrl = $controller('View2Ctrl');
-      expect(view2Ctrl).toBeDefined();
-    }));
-
-  });
 });
