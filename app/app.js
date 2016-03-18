@@ -1,3 +1,10 @@
+import angular from 'angular';
+import * as ngRoute from 'angular-route';
+import * as view1 from './view1/view1';
+import * as view2 from './view2/view2';
+import * as components from './components/version/version';
+
+
 (function () {
     'use strict';
 
@@ -8,6 +15,7 @@
       'myApp.view2',
       'myApp.version'
     ]).config(route);
+    console.log('coucou');
 
     /*@ngInject*/
     function route($routeProvider) {

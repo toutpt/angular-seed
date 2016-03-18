@@ -4,6 +4,7 @@ Difference with the official seed:
 
 * Use angular.component
 * Wrap your javascript files in IIFE
+* use ngDescribe to write test faster
 
 TODO: 
 * use es6 with babel
